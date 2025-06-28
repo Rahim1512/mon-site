@@ -1,71 +1,91 @@
- *{
-    margin: 0;
-    padding:0 ;
-    box-sizing: border-box;
-    font-family:"roboto", sans-serif;
-
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 5%;
-}
-header .logo {
-    font-size: 25px;
-}
-header .logo span {
-    color: #93d6d0;
-}
-header .menu a {
-    position:relative;
-    margin: 0 10px;
-    text-decoration: 0;
-    color: #999;
-    transition: 0.5;
-
-}
-header .menu a::before {
-    position: absolute;
-    top: -2px;
-    content: "";
-    width:100%;
-    height: 2px;
-    background-color: #93d6d0;
-    transition: 0.5;
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header.menu a:hover:before {
-     width: 100px;
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
 }
 
-header .menu a:hover {
-      color: #000;
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
- /*home*/
 
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0c6aad;
+}
 
- .home{
-    height:calc(100vh - 55px);
-    background:url(pexels-pixabay-236380.jpg);
-    background-position:center;
-    background-size: cover;
-    display:flex;
-    align-items: flex-end;
-    padding-bottom: 50px;
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
 
- }
-.home-infos {
-    background-color: #fff;
-    border-radius: 60px;
-    padding: 50px;
-    animation: anime 2s linear;
-} 
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
-/*animation home-infos*/
+.nav ul li a:hover {
+  color: #0c6aad;
+}
 
-@keyframes anime{
-    from{
-        transform:translateX(-600px)
-    }
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/hopital.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  background-color: #0c6aad;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #095a8a;
+}.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("C:\Users\wina's\Nouveau dossier (3)\image\pexels-jonathanborba-3259628.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  color: white;
 }

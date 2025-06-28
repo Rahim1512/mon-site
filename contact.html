@@ -2,31 +2,44 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Contact - Clinique medical Lumière</title>
-  <link rel="stylesheet" href="contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous - Clinique Médicale Lumière</title>
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+
   <header>
-    <h1>Clinique medical Lumière</h1>
+    <h1>Contactez-nous</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
   </header>
+
   <main>
-    <section class="hero">
-      <img src="" alt="Contactez la Clinique">
-    </section>
     <section class="contact-form">
-      <h3>Envoyez-nous un message</h3>
-      <form action="#" method="post">
-        <input type="text" name="nom" placeholder="Votre nom complet" required>
-        <input type="email" name="email" placeholder="Votre adresse email" required>
-        <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
-        <input type="text" name="numero" placeholder="votre numero."required>
-        <button type="submit">Envoyer</button> 
+      <h2>Formulaire de Contact</h2>
+      <form id="formulaire-contact">
+        <input type="text" id="nom" placeholder="Votre nom" required>
+        <input type="email" id="email" placeholder="Votre email" required>
+        <input type="text" id="sujet" placeholder="Sujet du message" required>
+        <textarea id="message" placeholder="Votre message" rows="6" required></textarea>
+        <button type="submit">Envoyer</button>
       </form>
+      <p id="confirmation"></p>
     </section>
   </main>
 
-  <footer>
-    &copy; 2025 Clinique medical lumiere — Tous droits réservés
-  </footer>
+  <script>
+    // Pour afficher un message de confirmation (aucun envoi réel)
+    document.getElementById("formulaire-contact").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("confirmation").textContent = "Merci pour votre message. Nous vous répondrons rapidement.";
+      this.reset(); // réinitialise le formulaire
+    });
+  </script>
+
 </body>
-</html
+</html>

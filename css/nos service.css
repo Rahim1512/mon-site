@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3fdfd;
+  color: #222;
+}
+
+header {
+  background-color: #006d77;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px;
+}
+
+.services-list {
+  list-style: disc;
+  padding-left: 40px;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: #006d77;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}

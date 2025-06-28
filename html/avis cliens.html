@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis des Clients</title>
+    <link rel="stylesheet"href="vos avis.css">
+</head>
+<body>
+    <header>
+        <h1>Avis des Clients</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Laissez votre avis</h2>
+            <form id="avis-form">
+                <input type="text" id="nom" placeholder="Votre nom" required>
+                <input type="number" id="note" min="1" max="5" placeholder="Note (1 à 5)" required>
+                <textarea id="commentaire" placeholder="Votre avis..." required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section class="avis-section">
+            <h2>Ce que disent nos clients :</h2>
+            <div id="liste-avis">
+            </div>
+        </section>
+    </main>
+
+    <script src="avis.js"></script>
+</body>
+</html>
