@@ -1,91 +1,75 @@
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 1.5rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #0c6aad;
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+main h2 {
+    text-align: center;
+    color: #333;
 }
 
-.nav ul li a:hover {
-  color: #0c6aad;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/hopital.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-  color: white;
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.btn {
-  padding: 0.8rem 2rem;
-  background-color: #0c6aad;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
+button:hover {
+    background-color: #004a99;
 }
 
-.btn:hover {
-  background-color: #095a8a;
-}.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("C:\Users\wina's\Nouveau dossier (3)\image\pexels-jonathanborba-3259628.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-  color: white;
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    margin-top: 40px;
 }

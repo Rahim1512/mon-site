@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prendre un Rendez-vous - Clinique Médicale Lumière</title>
+    <link rel="stylesheet" href="rendez vous.css">
+</head>
+<body>
+    <header>
+        <h1>Clinique Médicale Lumière</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="specialites.html">Spécialités</a>
+            <a href="rendezvous.html">Rendez-vous</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Prendre un rendez-vous</h2>
+        <form>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="ex: +243..." required>
+
+            <label for="date">Date du rendez-vous :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="heure">Heure :</label>
+            <input type="time" id="heure" name="heure" required>
+
+            <label for="specialite">Spécialité :</label>
+            <select id="specialite" name="specialite" required>
+                <option value="">-- Choisissez --</option>
+                <option value="consultation">Consultation</option>
+                <option value="radiologie">Radiologie</option>
+                <option value="pediatrie">Pédiatrie</option>
+                <option value="gynecologie">Gynécologie</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <button type="submit">Valider le rendez-vous</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clinique Médicale Lumière - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

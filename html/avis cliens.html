@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avis des Clients</title>
-    <link rel="stylesheet"href="vos avis.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vos Avis | Clinique medical Lumière</title>
+  <link rel="stylesheet" href="avis cliens.css">
 </head>
 <body>
-    <header>
-        <h1>Avis des Clients</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="logo">Clinique Santé Plus</div>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="consultation.html">Consultation</a>
+      <a href="service.html">Services</a>
+      <a href="rendez-vous.html">Rendez-vous</a>
+      <a href="avis.html" class="active">Vos avis</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="form-section">
-            <h2>Laissez votre avis</h2>
-            <form id="avis-form">
-                <input type="text" id="nom" placeholder="Votre nom" required>
-                <input type="number" id="note" min="1" max="5" placeholder="Note (1 à 5)" required>
-                <textarea id="commentaire" placeholder="Votre avis..." required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
+  <main class="main">
+    <section class="hero">
+      <h1>Vos témoignages</h1>
+      <p>Merci pour votre confiance. Vos avis nous aident à nous améliorer chaque jour.</p>
+    </section>
 
-        <section class="avis-section">
-            <h2>Ce que disent nos clients :</h2>
-            <div id="liste-avis">
-            </div>
-        </section>
-    </main>
+    <section class="content">
+      <blockquote>
+        "Un accueil chaleureux, des soins rapides et efficaces. Je recommande cette clinique !" – Marie K.
+      </blockquote>
+      <blockquote>
+        "Médecins compétents, équipements modernes. J’ai été très satisfait." – Jean-Paul M.
+      </blockquote>
+      <blockquote>
+        "Service excellent. Merci à toute l’équipe pour votre professionnalisme." – Amina L.
+      </blockquote>
+    </section>
+  </main>
 
-    <script src="avis.js"></script>
+  <footer class="footer">
+    <p>© 2025 Clinique medical Lumière  – Tous droits réservés</p>
+  </footer>
 </body>
 </html>

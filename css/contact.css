@@ -1,72 +1,100 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background-color: #007B77;
+  background: #0077b6;
   padding: 20px;
   text-align: center;
+}
+
+header h1 {
   color: white;
+  margin: 0;
 }
 
 nav a {
+  margin: 0 10px;
   color: white;
   text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+  padding: 5px 10px;
 }
 
-nav a.active {
-  text-decoration: underline;
+nav a.active,
+nav a:hover {
+  background-color: #005f8a;
+  border-radius: 4px;
 }
 
-main {
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
-}
-
-.contact-form {
-  background-color: white;
-  max-width: 600px;
-  margin: auto;
-  padding: 25px;
+  color: white;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.contact-form h2 {
-  margin-top: 0;
+  max-width: 80%;
   text-align: center;
 }
 
-form input, form textarea {
-  width: 100%;
+.contact-form {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-form h3 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
   margin: 10px 0;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
 
-form button {
-  background-color: #007B77;
+button {
+  background: #0077b6;
   color: white;
-  padding: 12px 20px;
   border: none;
-  border-radius: 5px;
+  padding: 12px;
   font-size: 16px;
+  border-radius: 5px;
   cursor: pointer;
-  width: 100%;
+  transition: background 0.3s;
 }
 
-form button:hover {
-  background-color: #005e57;
+button:hover {
+  background: #005f8a;
 }
 
-#confirmation {
-  margin-top: 20px;
-  color: green;
+footer {
+  background: #0077b6;
+  color: white;
   text-align: center;
+  padding: 10px;
+  margin-top: 40px;
 }
