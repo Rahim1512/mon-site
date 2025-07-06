@@ -49,22 +49,3 @@ body {
   padding: 15px;
   margin-top: 40px;
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'segoe ui', sans-serif;
-  background-image: url("c:\Users\wina's\Desktop\projet-final-Rahim1512\codebase\image\WhatsApp Image 2025-06-24 à 08.26.59_6f6c9381.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-body {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255,255,255, 0.7);
-  z-index: -1;
-}
